@@ -1,0 +1,113 @@
+body {
+    width: 100%;
+    background-color:	#008080;
+    text-align: center;
+    
+}
+
+#title {
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px;
+    
+}
+
+/* Calculator Styling */
+
+.calculator {
+    width: 300px;
+    height: 490px;
+    background-color:#333333;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid;
+    border-top-left-radius: 70%20px;
+    border-top-right-radius: 70%20px;
+    border-bottom-left-radius: 70%20px;
+    border-bottom-right-radius: 70%20px;
+}
+
+
+.row {
+    margin: 20px;
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+   
+}
+
+/* Input Screen */
+
+.input[type='text'] {
+    background-color: #c0efba;
+    border: 1px black solid;
+    line-height: 50px;
+    width: 80%;
+    font-size: 150%;
+    direction: rtl;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: black;
+    margin: 2px;
+
+}
+
+/* AC, CE, % button styling */
+
+.clear {
+    background-color: #A4A4A4;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 150%;
+    color: black;
+    border-radius: 50%;
+    border: 1px black solid;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: black;
+    margin: 2px;
+
+}
+
+/* ÷, x, -, +, = button styling*/
+
+.button {
+    background-color:#FF9903;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 150%;
+    margin: 2px;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: white;
+    
+    
+}
+
+/* Number button styling */
+
+.number {
+    
+    font-family: 'Poppins', sans-serif; 
+    font-size: 150%;
+    border: 1px solid white;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: black;
+    margin: 2px; 
+
+}
+
+/* Zero button styling */
+
+#zero {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 150%;
+    border: 1px solid white;
+    direction: ltr;
+    padding-right: 70px;
+    border-radius: 5px;
+    color:black;
+    margin: 2px;
+}
