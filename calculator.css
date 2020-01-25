@@ -1,113 +1,52 @@
-body {
-    width: 100%;
-    background-color:	#008080;
-    text-align: center;
-    
+.body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #ffce00, #0031ff);
 }
 
-#title {
-    color: white;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    margin: 30px;
-    
-}
-
-/* Calculator Styling */
-
-.calculator {
-    width: 300px;
-    height: 490px;
-    background-color:#333333;
-    margin: 20px auto;
-    text-align: center;
-    border: 1px solid;
-    border-top-left-radius: 70%20px;
-    border-top-right-radius: 70%20px;
-    border-bottom-left-radius: 70%20px;
-    border-bottom-right-radius: 70%20px;
-}
-
-
-.row {
-    margin: 20px;
-    width: 85%;
+.calculator-grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    justify-content: center;
     align-content: center;
-   
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px)
 }
 
-/* Input Screen */
-
-.input[type='text'] {
-    background-color: #c0efba;
-    border: 1px black solid;
-    line-height: 50px;
-    width: 80%;
-    font-size: 150%;
-    direction: rtl;
-    font-family: 'Poppins', sans-serif;
-    padding-right: 10px;
-    border-radius: 5px;
-    color: black;
-    margin: 2px;
-
+.calculator-grid > button {
+    cursor: hand;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .50);
 }
 
-/* AC, CE, % button styling */
-
-.clear {
-    background-color: #A4A4A4;
-    font-family: 'Poppins', sans-serif; 
-    font-size: 150%;
-    color: black;
-    border-radius: 50%;
-    border: 1px black solid;
-    padding-right: 10px;
-    border-radius: 5px;
-    color: black;
-    margin: 2px;
-
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .90) ;
 }
 
-/* ÷, x, -, +, = button styling*/
+.space-two {
+    grid-column: span 2;
+}
 
-.button {
-    background-color:#FF9903;
-    font-family: 'Poppins', sans-serif; 
-    font-size: 150%;
-    margin: 2px;
-    padding-right: 10px;
-    border-radius: 5px;
+.output {
+    grid-column: 1 /-1;
+    background-color: rgba(0, 0, 0, .50);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .50);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
     color: white;
-    
-    
-}
-
-/* Number button styling */
-
-.number {
-    
-    font-family: 'Poppins', sans-serif; 
-    font-size: 150%;
-    border: 1px solid white;
-    padding-right: 10px;
-    border-radius: 5px;
-    color: black;
-    margin: 2px; 
-
-}
-
-/* Zero button styling */
-
-#zero {
-    font-family: 'Poppins', sans-serif; 
-    font-size: 150%;
-    border: 1px solid white;
-    direction: ltr;
-    padding-right: 70px;
-    border-radius: 5px;
-    color:black;
-    margin: 2px;
+    font-size: 2.5rem;
 }

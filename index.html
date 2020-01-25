@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <title> Sprint 5 Calculator </title>
-            <meta charset = "UTF-8">
-            <link href="calculator.css" rel="stylesheet" type="text/css">
-            <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-            <script src="calculator.js"></script>
-    </head>
-
-  <body>
-    <div class = "calculator">
-        <p id = "title">
-            Sprint 5 Calculator
-        </p>
-      <input class="input" type="text" id="display" value="0" disabled>
-
-      <div>
-        <div class='row'>
-            <button class = "clear" id ="allClear" value="AC">AC</button>
-            <button class = "clear" id ="clear" value="CE">CE</button>
-            <button class = "clear" id ="modulus" value="%">%</button>
-            <button class = "button" id="divide" value="÷">÷</button>
-        </div>
-        <div class='row'>
-            <button class = "number" id ="seven" value="7">7</button>
-            <button class = "number" id ="eight" value="8">8</button>
-            <button class = "number" id ="nine" value="9">9</button>
-            <button class = "button" id="multiply" value="x">x</button>
-        </div>
-        <div class='row'>
-            <button class = "number" id ="four" value="4">4</button>
-            <button class = "number" id ="five" value="5">5</button>
-            <button class = "number" id ="six" value="6">6</button>
-            <button class = "button" id="subtract" value="-">-</button>
-        </div>
-        <div class='row'>
-            <button class = "number" id ="one" value="1">1</button>
-            <button class = "number" id ="two" value="2">2</button>
-            <button class = "number" id ="three" value="3">3</button>
-            <button class = "button" id="add" value="+">+</button>
-        </div>
-        <div class='row'>
-            <button class = "zero" id ="zero" value="0">0</button>
-            <button class = "number" id ="decimal" value=".">.</button>
-            <button class = "button" id="equals" value="=">=</button>
-        </div>
-
-      </div>
+<head>
+<title> Sprint 5 Calculator </title>
+<meta charset = "UTF-8">
+<link href="calculator.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+<body class="body">
+    <div class = "calculator-grid">
+      <div class = "output"> 
+        <div data-previous class="previous-operand"></div>
+        <div data-current class="current-operand"></div>
+       </div>
+    <button data-clear class="space-two">AC</button> 
+    <button data-delete>DEL</button> 
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>x</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class="space-two">=</button>
     </div>
-  </body>
+       
+</body>
 </html>
 
