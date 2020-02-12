@@ -1,50 +1,20 @@
-class Calculator {
-    constructor(preOperand, currOperand) {
-        this.preOperand = preOperand
-        this.currOperand = currOperand
+function insert(num){
+   return document.grid.display.value =  document.grid.display.value+num
+}
+
+function equal(){
+    let exp =  document.grid.display.value
+    if(exp){
+      return document.grid.display.value = eval(exp)
     }
 }
 
-clear() {
-    this.currOperand = ''
-    this.preOperand = ''
-    this.operation = undefined
-}
-
-delete() {
+function clean(){
+  return document.grid.display.value = ""
 
 }
 
-appendNumber(number) {
-// this.currOperand = number this.currOperand.toString() + number.toString()
+function back(){
+    let exp =  document.grid.display.value
+    return document.grid.display.value = exp.substring(0,exp.length-1)
 }
-
-
-chooseOperation(operation) {
-
-}
-
-calculate() {
-
-}
-
-updateDisplay() {
-    this.currOperand.innerText = this.currOperand
-}
-
-
-const numberButtons = document.querySelectorAll('[data-number]')
-const opButtons = document.querySelectorAll('[data-operations]')
-const delButton = document.querySelectorAll('[data-delete]')
-const equalsButton = document.querySelectorAll('[data-equals]')
-const preOperand = document.querySelectorAll('[data-previous]')
-const currOperand = document.querySelectorAll('[data-current]')
-
-const calculator = new Calculator(preOperand, currOperand)
-
-numberButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        calculator.appendNumber(button.innerText)
-        calculator.updateDisplay()
-    })
-})
