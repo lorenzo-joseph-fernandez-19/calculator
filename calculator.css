@@ -1,4 +1,4 @@
-.body {
+body {
     padding: 0;
     margin: 0;
     background: linear-gradient(to right, #ffce00, #0031ff);
@@ -13,7 +13,7 @@
     grid-template-rows: minmax(120px, auto) repeat(5, 100px)
 }
 
-.calculator-grid > input {
+.calculator-grid > button {
     cursor: hand;
     font-size: 2rem;
     border: 1px solid white;
@@ -21,7 +21,7 @@
     background-color: rgba(255, 255, 255, .50);
 }
 
-.calculator-grid > input:hover {
+.calculator-grid > button:hover {
     background-color: rgba(255, 255, 255, .90) ;
 }
 
@@ -29,7 +29,7 @@
     grid-column: span 2;
 }
 
-.output {
+input {
     grid-column: 1 /-1;
     background-color: rgba(0, 0, 0, .50);
     display: flex;
@@ -39,9 +39,7 @@
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
-}
-
-.output .display {
-    color: black;
+    color: white;
     font-size: 2.5rem;
-}
+  }
+
